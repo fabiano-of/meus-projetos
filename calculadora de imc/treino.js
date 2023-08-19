@@ -1,5 +1,3 @@
-
-
     let peso = document.getElementById('pes')
     let altura = document.getElementById('altura')
     let botao = document.getElementById('botao')
@@ -15,7 +13,6 @@ function cliqueiNoBotao() {
     imc = valorP / (valorA * valorA )
 
     res.innerHTML = imc.toFixed(2)
-
 
     if (valorP <= 0 || valorA <= 0) {
         alert('Favor preencher os dados corretamente!');
@@ -34,7 +31,6 @@ function cliqueiNoBotao() {
     }else {
         img.src ='img/obesidade3.png'
     }
-
 }
 
 function limparCampo(){
@@ -43,7 +39,6 @@ function limparCampo(){
     
     res.innerHTML =''
 }
-
 
 botao.addEventListener('click', cliqueiNoBotao)
 limpar.addEventListener('click', limparCampo)
