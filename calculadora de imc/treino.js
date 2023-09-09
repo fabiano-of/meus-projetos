@@ -7,6 +7,10 @@
 
 function cliqueiNoBotao() {
 
+    img.style.width = 'auto';
+    img.style.width = 'auto';
+
+
     valorP = Number(peso.value)
     valorA = Number(altura.value)
 

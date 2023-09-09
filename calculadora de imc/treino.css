@@ -11,10 +11,9 @@ body {
     flex-direction: column;
     align-items: center;
     background-image: linear-gradient(to right, #A9D9D0, #027373);
-
-    
-    
 }
+
+/*DIV principal*/
 .calculadora {
     height: 570px;
     width: 500px;
@@ -23,10 +22,11 @@ body {
     margin-top: 50px;
     background-color: #027373;
     border-radius: 10px;
-    box-shadow:5px 5px 0px #a9d9d02a;
-    
+    box-shadow:5px 5px 0px #a9d9d02a;  
+    overflow: hidden;
 }
 
+/*Título*/
 h1 {
     padding: 10px;
     border-bottom: solid 1px;
@@ -35,32 +35,57 @@ h1 {
     color: #F2E7DC;
 }
 
-p {
-    padding-top: 30px;
-    font-size: 20px;
-    color: white;
-    padding-left: 10px;
+.displyTexInput {
+    display: flex;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    
 }
 
+
+
+/*Parágrafos*/
+.textImput {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: white;
+    border: 0;
+    margin: 5px;
+    padding: 5px;
+    
+    
+    
+
+}
+
+/*Informações necessárias para o cálculo*/
 input {
     border-radius: 5px;
     border: solid 0px;
     outline: none;
     height: 30px;
     width: 110px; 
-    padding: 5px;
+    padding: 10px;
+    margin-left: 10px;
+    
+    
+    
 }
 
+/*Botões*/
 #button {
     width: 500px;
     display: flex;
+    padding: 0px 20px;
     justify-content: space-between;
 
 }
 button {
     height: 30px;
     width: 110px;
-    margin: 20px 10px;
+    margin: 10px 10px;
     border-radius: 5px;
     cursor: pointer;
     border: solid 0px;
@@ -77,19 +102,7 @@ button:hover {
     align-items: flex-end;
 }
 
-#img {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-    
-}
-
-#imagem {
-    border-radius: 10px;
-    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.192);
-}
-
+/*Imagens de inlustração*/
 #dados_res {
     height: 290px;
     width: 500px;
@@ -102,6 +115,22 @@ button:hover {
 
 }
 
+/*DIV das Imagens*/
+#img {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/*Imagens de inlustração*/
+#imagem {
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.192);
+}
+
+/*Resultado do cálulo*/
 #resultado { 
     width: 300px;
     display: flex;
@@ -125,5 +154,95 @@ button:hover {
    align-items: center;
    font-weight: bold;
    font-size: 20px;
+
+}
+/*FIM DO STYLE*/
+
+/*INÍCIO DO RESPONSIVO*/
+
+@media (max-width: 700px) {
+
+    
+    .calculadora {
+        width: 100%;
+        height: 100%;
+        border-radius: 0px;
+        margin: 0;
+
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .textImput {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 1.8em;
+        
+    }
+
+    input {
+        display: flex;
+        text-align: center;
+        width: 200px;
+        height: 40px;
+        font-size: 1.2em;
+        margin: auto;
+        
+    }
+
+    #button {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: auto;
+    }
+
+    .linha {
+        
+        margin-top: 20px;
+        border-top-style: dashed;
+        border-color: #F2E7DC;
+        border-width: 1px;
+    }
+
+    button {
+        width: 200px;
+        height: 40px;
+        font-size: 1.5em;
+
+    }
+
+    #dados_res {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+    }
+
+    #resultado {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #textResult {
+        font-size: 1.7em;
+        font-weight: bold;
+    }
+
+    #res {
+        width: 150px;
+        height: 40px;
+        font-size: 1.7em;
+    }
 
 }

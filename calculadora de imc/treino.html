@@ -8,20 +8,34 @@
 </head>
 <body>
     <div class="calculadora">
+        <!--Título do projeto-->
         <h1>TABELA CÁLCULO ÍNDICE DE MASSA CORPORAL (IMC)</h1>
-        <p>Digite seu peso: <input type="number" name="pes" id="pes" placeholder="Seu peso..."></p>
-        <p>Digite a sua altura: <input type="number" name="altura" id="altura" placeholder="Sua altura..."></p>
+
+        <!--Informações necessárias para o cálculo-->
+        <div class="displyTexInput">
+        <div class="textImput">Digite seu peso: <input type="number" name="pes" id="pes" placeholder="Seu peso..."></div>
+        
+        <div class="textImput">Digite a sua altura: <input type="number" name="altura" id="altura" placeholder="Sua altura..."></div>
+        </div>
+
+        <div class="linha"></div>
+
+        <!--Botões-->
         <div id="button">
             <button type="button" id="botao">Calcular</button>
             <button type="button" id="btnLimpar">Limpar</button>
         </div>
+
+        <!--Imagens de inlustração-->
         <div id="dados_res">
             <div id="img">
                 <img src="img/indice.png" id="imagem" alt="Abaixo do peso">
             </div>
         </div>
+
+        <!--Resultado do cálulo-->
         <div id="resultado">
-            <div>Seu IMC é:</div>
+            <div id="textResult">Seu IMC é:</div>
             <div id="res"></div>
         </div>
     </div>
