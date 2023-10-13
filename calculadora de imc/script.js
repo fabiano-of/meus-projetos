@@ -35,7 +35,6 @@ function cliqueiNoBotao() {
     }else {
         img.src ='img/obesidade3.png'
     }
-
 }
 
 function limparCampo(){
