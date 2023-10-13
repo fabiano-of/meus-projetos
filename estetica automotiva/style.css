@@ -7,7 +7,7 @@
 
 body {
     width: 100vw;
-    
+    background: #000000;
 }
 
 .menu {
@@ -85,7 +85,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    border-bottom: solid 2px #808080;
 }
 
 .informativo p {
@@ -116,7 +116,7 @@ body {
 }
 
 .orcamento button:hover {
-    background-color: #2bb8dfa8;
+    background-color: #2bb8df96;
 }
 
 .conteudo {
@@ -132,6 +132,8 @@ body {
 }
 
 .conteudo .servicos {
+    background: black;
+    color: white;
     margin-top: 50px;
     width: 75%;
     display: flex;
@@ -140,25 +142,33 @@ body {
     align-items: center;
     border-radius: 5px;
     padding: 10px;
-    -webkit-box-shadow: -1px 1px 16px 6px rgba(0,0,0,0.67); 
-    box-shadow: -1px 1px 16px 6px rgba(0,0,0,0.67);
-
+    border: solid 1px #2bb8df;
     
 }
 
 .conteudo .servicos img{
     width: 100%;
     height: 100%;
+    margin: 10px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 50%;
+    box-shadow: 0px 12px 21px 1px rgba(43, 184, 223, 1);
+    -webkit-box-shadow: 0px 12px 21px 1px rgba(43, 184, 223, 1);
+    -moz-box-shadow: 0px 12px 21px 1px rgba(43, 184, 223, 1);
+
+
 }
 
 .conteudo .servicos h2 {
-    padding-bottom: 20px;
+    width: 100%;
+    padding-bottom: 10px;
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
+    border-bottom: #2bb8df solid 1px;
+    border-bottom-style: dashed;
+    margin-bottom: 10px;
 }
 
 .conteudo .servicos p {
@@ -173,7 +183,6 @@ footer {
     margin-top: 20px;
     background-color: white;
     border-top: solid 2px #808080;
-
 }
 
 
