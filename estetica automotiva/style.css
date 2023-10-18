@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    width: 100vw;
+    background: #000000;
+}
+
+.menu {
+    display: flex;
+    width: 100vw;
+    height: 110px;
+    border-bottom: solid 2px #808080;
+    -webkit-box-shadow: 0px 0px 11px 6px rgba(128,128,128,0.93); 
+    box-shadow: 0px 0px 11px 6px rgba(128,128,128,0.93);
+}
+
+.logo {
+    display: flex;
+    margin: auto;
+    margin-left: 5px;
+}
+
+.buttonClik button {
+    border: 0px;
+    background: none;
+    cursor: pointer;
+}
+
+.buttonClik img {
+    max-width: 50px;
+}
+
+.contato a {
+    justify-content: right;
+    cursor: pointer;
+}
+
+.contato img {
+    width: 38px;
+    padding: 5px;
+}
+
+.menuList {
+    width: 100vw;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    padding: 10px;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.navLi {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    
+}
+
+.menu-list ul li {
+    margin-top: 5px;
+}
+
+.informativo {
+    height: 300px;
+    background: linear-gradient(rgba(17, 17, 17, 0.685), rgba(20, 20, 20, 0.973)), url(imagem/imageBack.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 2px #808080;
+}
+
+.informativo p {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+.informativo p span {
+    color: #2bb8df;
+    font-weight: bold;
+}
+
+.orcamento button {
+    width: 200px;
+    height: 60px;
+    background-color: #2bb8df;
+    margin-top: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+
+.orcamento button:hover {
+    background-color: #2bb8df96;
+}
+
+.conteudo {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo .informativo {
+    width: 100vw;
+}
+
+.conteudo .servicos {
+    background: black;
+    color: white;
+    margin-top: 50px;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px;
+    border: solid 1px #2bb8df;
+    
+}
+
+.conteudo .servicos img{
+    width: 100%;
+    height: 100%;
+    margin: 10px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 12px 21px 1px rgba(43, 184, 223, 1);
+    -webkit-box-shadow: 0px 12px 21px 1px rgba(43, 184, 223, 1);
+    -moz-box-shadow: 0px 12px 21px 1px rgba(43, 184, 223, 1);
+
+
+}
+
+.conteudo .servicos h2 {
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    border-bottom: #2bb8df solid 1px;
+    border-bottom-style: dashed;
+    margin-bottom: 10px;
+}
+
+.conteudo .servicos p {
+    font-size: 20px;
+    text-align: justify;
+    margin: 15px;
+}
+
+footer {
+    width: 100vw;
+    height: 80px;
+    margin-top: 20px;
+    background-color: white;
+    border-top: solid 2px #808080;
+}
+
+
+
+
+
+
+

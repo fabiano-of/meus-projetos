@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(rgba(17, 17, 17, 0.158), rgba(20, 20, 20, 0.137)),url(/imagens/background.jpg);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.trafficSignal {
+    background: white;
+    width: 200px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    border: solid white 1px;
+    border-radius: 10px;
+}
+
+.trafficSignal div {
+    margin: 10px;
+}
+
+#red {
+    height: 200px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+#yellow {
+    height: 200px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+
+#green {
+    height: 200px;
+    background-color: green;
+    border-radius: 50%;
+}
