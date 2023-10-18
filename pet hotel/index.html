@@ -5,15 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Hotel Pet</title>
+    <!--Início das fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fim das fontes-->
   </head>
   <body>
     <header>
+      <nav class="menu-para-tela">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">CADASTRO</a></li>
+          <li><a href="#">LOGIN</a></li>
+          <li><a href="#">CONTATO</a></li>
+        </ul>
+      </nav>
       <nav class="menu">
-        <input type="checkbox" class="menus-check"/>
+        <input type="checkbox" class="menus-check" />
         <div class="menu-lines">
-            <span></span>
-            <span></span>
-            <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <ul>
           <li><a href="#">HOME</a></li>
@@ -22,18 +45,68 @@
           <li><a href="#">CONTATO</a></li>
         </ul>
       </nav>
+      <section>
+        <aside class="logo">
+          <p class="text-logo">
+            QUATRO <br />
+            PATAS HOTEL
+          </p>
+          <p>O melhor hotel para seu <span class="name-pet">Pet!</span></p>
+        </aside>
+      </section>
     </header>
     <aside class="conteudo">
-      <section>
-        <img src="img/1.jpg" alt="pets" id="img-pet"/>
+      <section class="display-1">
+        <img src="img/1.jpg" alt="pets" id="img-pet" />
       </section>
-      <section>
-        <button>Entrar em contato</button>
+      <section class="display-2">
+        <section class="button">
+          <button type="button" class="button-contact">
+            Entrar em contato
+          </button>
+        </section>
+        <section class="text-information">
+          <div>Está sem tempo para passear com seu PET?</div>
+          <div>Daremos os meslhores cuidados para seu PET.</div>
+          <div>È só entrar em contato para mais informações!</div>
+        </section>
+        <section class="sobre-servicos">
+          <section class="titulo-dos-servicos">
+            <p>Tudo o que seu pet precisa!</p>
+          </section>
+          <section class="infor-dos-servicos">
+            <img src="img/coracao.png" alt="" />
+            <p>Cuidados 24 horas por dia</p>
+          </section>
+          <section class="infor-dos-servicos">
+            <img src="img/camera.png" alt="" />
+            <p>Fotos e vídeos do seu pet</p>
+          </section>
+          <section class="infor-dos-servicos">
+            <img src="img/casinha.png" alt="" />
+            <p>Acomodações individuais</p>
+          </section>
+          <section class="infor-dos-servicos">
+            <img src="img/grama.png" alt="" />
+            <p>Espaço com grama</p>
+          </section>
+          <section class="infor-dos-servicos">
+            <img src="img/escudo.png" alt="" />
+            <p>Segurança na hospedagem</p>
+          </section>
+          <section class="infor-dos-servicos">
+            <img src="img/remedio.png" alt="" />
+            <p>Cuidados para pets especiais</p>
+          </section>
+        </section>
       </section>
-      <section>
+      <section class="button">
+        <button type="button" class="button-contact">Entrar em contato</button>
+      </section>
+      <section class="endereco">
         <p>
-          Está sem tempo para passear com seu PET? Daremos os meslhores cuidados
-          para seu PET. È só entrar em contato para mais informações!
+          Nº 700, Bairro Centro, CEP XXXXX-000, na cidade de Bodocó, Estado do
+          Pernambuco
         </p>
       </section>
     </aside>
