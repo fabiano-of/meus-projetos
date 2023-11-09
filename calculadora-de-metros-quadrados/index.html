@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de metros quadrados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="todoConteudo">
+        <!--Título-->
+        <header class="title">
+            <h1>Calculadora de m²</h1>
+        </header>
+
+        <!--Início do cálculo do piso-->
+        <section class="calculoDoPiso">
+            <h2>Cálculo para o piso</h2>
+
+            <input type="number" name="comprimentoPiso" id="comprimentoPiso" placeholder="Comprimento (valor em metro)">
+            <input type="number" name="largura" id="largura" placeholder="Largura (valor em metro)">
+            <p>Total</p>
+            <section class="resultado">
+                <p id="res">Resultado</p>
+            </section>
+        </section>
+
+        <!--Início do cálculo da parede-->
+        <section class="calculoDaParede">
+            <h2>Cálculo do m² da parede</h2>
+            <input type="text" name="comprimento" id="comprimentoParede" placeholder="Comprimento (valor em metro)">
+            <input type="text" name="altura" id="altura" placeholder="Altura (valor em metro)">
+            <p>Total</p>
+            <section class="resultado">
+                <p id="resultado">Resultado</p>
+            </section>
+        </section>
+
+        <!--Botões-->
+        <section class="botoes">
+            
+            <input type="button" id="calcular" value="Calcular" onclick()="calculoPiso">
+            <input type="button" id="limpar" value="Limpar">
+        </section>
+    </main>
+    
+<script src="script.js"></script>
+</body>
+</html>
