@@ -70,12 +70,12 @@ body {
     border-top: solid;
     border-color: gray;
     text-align: center;
-    font-size: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 
 /*início do calculo da parede*/
 .calculoDaParede {
