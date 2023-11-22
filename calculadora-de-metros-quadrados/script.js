@@ -1,66 +1,65 @@
 let botaoCalcular = document.getElementById("calcular");
 let botaoLimpar = document.getElementById("limpar");
 
-function metroQuadradoPiso() {
-let valorDoComprimento = Number(document.getElementById("comprimentoPiso").value);
-let valorDaLargura = Number(document.getElementById("largura").value);
-let resultadoMetroQuadrado = document.getElementById("res");
+/*dados do piso*/
+let valorDoComprimento = document.getElementById("comprimentoPiso");
+let valorDaLargura = document.getElementById("largura");
 
+/*dados da parede*/
+let ComprimentoDaParede = document.getElementById("comprimentoParede");
+let alturaDaParede = document.getElementById("altura");
+
+/*dados do resultado*/
+let resMetPiso = document.getElementById("res");
+let resMetParede = document.getElementById('resultParede');
 
 /*cálculo do piso*/
 
-let resultado = valorDoComprimento * valorDaLargura
+function metroQuadradoPiso() {
+   
+    valorC = Number(valorDoComprimento.value);
+    valorL = Number(valorDaLargura.value);
 
-total = resultado
+    valorTotal = valorC * valorL;
 
-resultadoMetroQuadrado.innerHTML = total.toFixed(2)
+    total = valorTotal;
+  
+    resMetPiso.innerHTML = total.toFixed(2);
+  
+  }
 
-}
-
+/*cálculo da parede*/
 
 function metroQuadradoParede() {
-    let ComprimentoDaParede = Number(document.getElementById('comprimentoParede').value)
-    let alturaDaParede = Number(document.getElementById('altura').value);
-    let resultadoMetroQuadrado = document.getElementById("resultParede");
 
-    let resultadoParede = ComprimentoDaParede * alturaDaParede
+  valorDo = Number(ComprimentoDaParede.value);
+  valorAl = Number(alturaDaParede.value);
 
-    totalParede = resultadoParede
+  mult = valorDo * valorAl;
 
-    resultadoMetroQuadrado.innerHTML = totalParede.toFixed(2)
+  multTotal = mult;
+
+  resMetParede.innerHTML = multTotal.toFixed(2);
 }
+
+/*Função limpar campos*/
 
 function limparCampos() {
-    
-    //campos do piso
-    valorDoComprimento.value = ""
-    valorDaLargura.value = ""
-    resultadoMetroQuadrado.value = ""
+  //campos do piso
 
-    //campos da parede
-    ComprimentoDaParede = ""
-    alturaDaParede = ""
-    resultadoMetroQuadrado = ""
+  valorDoComprimento.value = "";
+  valorDaLargura.value = "";
+  resMetPiso.value = "";
+
+  //campos da parede
+
+  ComprimentoDaParede.value = "";
+  alturaDaParede.value = "";
+  resMetParede.value = "";
+
 }
 
 
-/*
-let valorComprimentoPiso = Number(valorDoComprimento.value)
-
-let valorLarguraPiso = Number(valorDaLargura.value)
-
-resultadoTotal = valorComprimentoPiso + valorLarguraPiso
-*/
-
-
-botaoCalcular.addEventListener("click", metroQuadradoPiso);
-botaoCalcular.addEventListener("click", metroQuadradoParede);
-
-botaoLimpar.addEventListener("click", limparCampos);
-
-
-
-/*
-botaoLimpar.addEventListener("click", limpar);
-*/
-
+  botaoCalcular.addEventListener("click", metroQuadradoPiso);
+  botaoCalcular.addEventListener("click", metroQuadradoParede);
+  botaoLimpar.addEventListener('click', limparCampos);
